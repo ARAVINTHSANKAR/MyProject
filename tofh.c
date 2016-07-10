@@ -18,3 +18,4 @@ return;
 toh(disc-1,source,dest,t);
 printf("move disc %d from %c to %c\n",disc,source,dest);
 toh(disc-1,t,source,dest);
+}
