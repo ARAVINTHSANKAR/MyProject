@@ -1,12 +1,6 @@
-table, td, th {
-    border: 1px solid black;
+.textfieldDiv {
+	width : 50%;
+	padding-top : 30px;
+	background-color : red;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th {
-    height: 50px;
-}

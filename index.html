@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" href = "style.css" />
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+<body ng-app="myApp">
+
+<script src="script.js"></script>
+<p><a href="#/!">INDEX</a></p>
+
+<a href="#!generateForm">Generate Form</a>
+<a href="#!form">Form</a>
+<a href="#!remainingStock">Remaining Stock</a>
+<a href="#!other">Other</a>
+
+
+<div ng-view></div>
+
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "other.html"
+    })
+    .when("/form", {
+        templateUrl : "form.html"
+    })
+    .when("/generateForm", {
+        templateUrl : "generateForm.html"
+    })
+    .when("/remainingStock", {
+        templateUrl : "remainingStock.html"
+    });
+});
+</script>
+
+</body>
+</html>
