@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<title> Batteries Sale </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even){background-color: #f2f2f2}
+
+		th {
+			background-color: #b56969;
+			color: white;
+		}
+		
+		#retriveEntireDetailsButton {
+			margin-top : 30px;
+			margin-bottom : 30px;
+			background-color: white;
+			color: black;
+			border: 2px solid #555555;
+			width : 80px;
+			height : 40px;
+		}
+
+		#retriveEntireDetailsButton:hover {
+			background-color: #555555;
+			color: white;
+		}		
+	</style>
+</head>
+<body>
+
+<button onclick ="retriveEntireDetails()" id = "retriveEntireDetailsButton"> Data </button>
+
+	 <div>
+		<table id = "SalesDetailsTable">
+		</table>
+	</div>
+	<script src ="script.js"></script>
+</body>
+
+</html>
